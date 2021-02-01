@@ -7,15 +7,32 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Ekhephini FM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link"  href="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="/register">Register</a>
+          </li>
+          <li class="nav-item">
+            <form action='/logout?_method=DELETE' method='POST'>
+              <button class="nav-link"  type='submit' class='btn btn-danger bg-dark'>LOGOUT</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="row">
       <div class="container">
         <div class="col-md-12">
           <div class="col-md-8 offset-2 mt-3">
-            <a href="/login">Login</a>
-            <a href="/register">Register</a>
-            <form action='/logout?_method=DELETE' method='POST'>
-               <button type='submit' class='btn btn-danger ml-4'>LOGOUT</button>
-            </form>
             <h1>Hi <%= name %></h1>
           </div>
         </div>

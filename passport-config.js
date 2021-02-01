@@ -9,7 +9,7 @@ function initialize(passport, getUserByEmail, getUserById) {
     if(user == null) {
       return done(null, false, {message: 'No user found'})
     }
-    
+
     try {
       if(await bcrypt.compare(password, user.password)) {
         return done(null, user)
@@ -17,9 +17,9 @@ function initialize(passport, getUserByEmail, getUserById) {
         return done(null, false, {message: 'Password is incorrect'})
       }
     } catch(e) {
-      return done(e)
+        return done(e)
     }
-    
+
   }
 
   passport.use(new LocalStrategy({usernameField: 'email'}, authenticateUser))
