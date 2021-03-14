@@ -7,18 +7,52 @@ body {
 }
   
 .img1 {
-    background-color: #ff0000;
-    height: 16rem;
+    background-color: #eee;
+    height: 40rem;
 }
 
 .img2 {
     background-color: #1fb7dd;
-    height: 16rem;
+    height: 40rem;
 }
 
 .img3 {
     background-color: #e2f026;
-    height: 16rem;
+    height: 40rem;
+}
+
+.img4 {
+    background-color: #e2f026;
+    height: 40rem;
+}
+
+.img5 {
+    background-color: #e2f026;
+    height: 40rem;
+}
+
+.img6 {
+    background-color: #e2f026;
+    height: 40rem;
+}
+
+.img7 {
+    background-color: #e2f026;
+    height: 40rem;
+}
+
+.img8 {
+    background-color: #e2f026;
+    height: 40rem;
+}
+
+.img9 {
+    background-color: #e2f026;
+    height: 40rem;
+}
+
+.carousel-inner {
+  text-shadow: 2px 1px #000;
 }
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
