@@ -1,0 +1,35 @@
+body {
+    padding-top: 5rem;
+  }
+
+#myCarouseler {
+    height: 16rem;
+}
+  
+.img1 {
+    background-color: #ff0000;
+    height: 16rem;
+}
+
+.img2 {
+    background-color: #1fb7dd;
+    height: 16rem;
+}
+
+.img3 {
+    background-color: #e2f026;
+    height: 16rem;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+   #myCarouseler {
+        height: 16rem;
+        margin-top: 16rem;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+  }
